@@ -1,0 +1,29 @@
+.services{
+    background-color: $color-white-cream;
+    margin-top: $mg-2;
+    .services__content{
+        width: 80%;
+        margin:auto;
+        padding:$pd-2;
+        .services__icon{
+            background-color: $color-white-0;
+            padding:$pd-2 + 4;
+            margin-right: $mg-1;
+            height: 183px;
+            .icon_sr{
+                @include styleText($color-black-0,$fs-4 + 10, $fw-bold);
+                margin-right: $mg-2;
+            }
+            .icon__sr{
+                padding-top: $pd-1;
+                p:first-child {
+                    @include styleText($color-black-0, $fs-0 + 4, $fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child {
+                    @include styleText($color-gray-4, $fs-0 +1, $fw-normal)
+                }
+            }
+        }
+    }
+}

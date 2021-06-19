@@ -1,0 +1,34 @@
+.intro{
+    background: linear-gradient(to right, $color-red-1, $color-red-0);
+    .intro__content{
+        padding:$pd-2;
+        .intro__icon{
+            .icon{
+                @include styleText($color-white-0,$fs-4 + 10, $fw-bold);
+                margin-right: $mg-2;
+            }
+            .icon__content{
+                padding-top: $pd-1 + 5;
+                p:first-child {
+                    @include styleText($color-white-0, $fs-0 + 2, $fw-bold);
+                    margin-bottom: 0;
+                }
+                p:last-child {
+                    @include styleText($color-white-0, $fs-0, $fw-normal)
+                }
+            }
+        }
+    }
+}
+.intro{
+    @include responsive("extra-large"){
+        .intro__content{
+            display: none;
+            @include responsive("extra-large"){
+                .intro__icon{
+                    .icon,.icon__content{display:none;}
+                }
+            }
+        }
+    }
+}

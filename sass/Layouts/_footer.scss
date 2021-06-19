@@ -1,0 +1,37 @@
+footer{
+    border-bottom: 6px solid $color-red-0;
+    .end{
+        width: 80%;
+        margin: auto;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+    .end__content{
+        .end-1{
+            img{
+                width: 110px;
+            }
+        }
+    }
+    .end__list{
+        .end-2{
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
+                    line-height: 35px;
+                    padding-left: $pd-2;
+                    a{
+                        @include styleText($color-blue,$fs-0,$fw-normal);
+                        &:hover{
+                            text-decoration:none;
+                            color: $color-black-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}

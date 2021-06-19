@@ -1,0 +1,33 @@
+.companies{
+    border-bottom: 1px solid $color-gray-6;
+    .companies__list{
+        width: 80%;
+    margin: auto;
+    li{
+        list-style: none;
+        line-height: 35px;
+        a{
+            @include styleText($color-blue,$fs-0,$fw-normal);
+            &:hover{
+                text-decoration:none;
+                color: $color-black-0;
+            }
+        }
+    }
+    .language{
+        text-align:right;
+        .language__list{
+            text-align: right;
+            padding:$pd-1 $pd-2 + 20;
+            @include styleText($color-gray-4,$fs-0,$fw-bold);
+            &:focus{
+                outline: none;
+            }
+        }
+        @include responsive("extra-large"){
+            text-align: left;
+            padding-bottom: 25px;
+        }
+    }
+    }
+}
